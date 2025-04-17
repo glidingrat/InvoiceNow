@@ -1,0 +1,242 @@
+/* Globální nastavení */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('../img/About_Background.png'); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+    background-position: center; 
+   
+    height: 100%;
+}
+
+
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    font-size: 1em;
+    text-shadow: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border: 2px solid #F5F5DC;
+    text-shadow: none;
+}
+
+.logo {
+    text-decoration: none; /* Zrušení podtržení */
+    color: inherit; /* Dědění barvy textu z nadřazeného elementu */
+    font-size: inherit; /* Dědění velikosti písma */
+    font-weight: inherit; /* Dědění tloušťky písma */
+    cursor: pointer; /* Změna kurzoru na pointer při hoveru */
+}
+
+.logo:hover {
+    text-decoration: none; /* Zajištění, že zůstane bez podtržení při hoveru */
+    color: inherit; /* Zajištění, že barva zůstane stejná při hoveru */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.form-box {
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+h1,h3 {
+    margin-bottom: 10px;
+    margin-top: 0;
+    font-size: 24px;
+    
+
+    font-family: 'Montserrat', sans-serif;
+    color: #edf0f1;
+    text-shadow: 
+    -1px -1px 0 black,  
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+.input-group {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+
+
+.input-group label {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    color: #edf0f1;
+    font-size: 16px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border: 2px solid #F5F5DC;
+    text-shadow: none;
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: #F5F5DC;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 1.1em;
+    text-shadow: none;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 25px;
+    opacity: 0.7;
+}
+
+button[type="submit"]:hover {
+    opacity: 1;
+}
+
+
+
+ul{
+    margin: 0 0 20px 20px; 
+    padding: 0; 
+    list-style-type: disc;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    color: #edf0f1;
+}
+
+.nav_links{
+    text-shadow: none;
+}
+
+
+p a:hover {
+    text-decoration: underline;
+}
+/* Styl pro logo */
+.logo {
+    margin-left: 20px;
+    font-size: 24px; /* Velikost písma pro logo */
+    font-weight: bold; /* Tučné písmo */
+}
+/* Obecné styly pro hlavičku */
+header {
+    display: flex; /* Použijte flexbox pro uspořádání */
+    justify-content: space-between; /* Prostor mezi prvky */
+    align-items: center; /* Vertikální zarovnání */
+    padding: 0 20px; /* Vnitřní okraje */
+    background-color: rgb(205, 205, 186); /* Barva pozadí hlavičky */
+    position: sticky; /* Zajistí, že zůstane nahoře při scrollování */
+    top: 0; /* Zajistí, že je na vrchu */
+    z-index: 1000; /* Zajišťuje, že je nad ostatními prvky */
+}
+
+/* Styl pro navigaci */
+.nav_links {
+    list-style: none; /* Odstranění odrážek */
+    padding: 0; /* Odstranění vnitřního okraje */
+    margin: 0; /* Odstranění vnějšího okraje */
+    display: flex; /* Umožňuje horizontální uspořádání */
+    justify-content: center; /* Udržuje odkazy na střed */
+}
+
+/* Styl pro jednotlivé odkazy v navigaci */
+.nav_links li {
+    margin: 0 7vh; /* Vzdálenost mezi odkazy */
+}
+
+.nav_links a {
+    text-decoration: none; /* Odstranění podtržení */
+    font-family: 'Montserrat', sans-serif;
+    color:rgb(0, 0, 0);
+}
+
+
+/* Styl pro uživatelské info */
+.user-info {
+    display: flex; /* Umožňuje horizontální uspořádání */
+    align-items: center; /* Vertikální zarovnání */
+}
+
+#username {
+    margin-right: 10px; /* Vzdálenost mezi uživatelským jménem a tlačítkem pro odhlášení */
+}
+
+/* Styl pro tlačítko odhlášení */
+/* Styl pro tlačítko odhlášení */
+.btn-logout {
+    background-color: #ff1e3c; /* Barva pozadí */
+    border: none; /* Bez okraje */
+    color: #f4f4f4;  /* Barva textu */
+    font-weight: 700; /* Tučné písmo */
+    font-size: 1em; /* Velikost písma */
+    text-shadow: none; /* Bez stínu textu */
+    padding: 12px 28px; /* Vnitřní okraje */
+    text-align: center; /* Zarovnání textu na střed */
+    text-decoration: none; /* Bez podtržení */
+    display: inline-block; /* Umožňuje nastavení okrajů */
+    margin: 4px 2px; /* Vzdálenost mezi tlačítky */
+    cursor: pointer; /* Změna kurzoru na ruku */
+    border-radius: 25px; /* Zaoblení rohů */
+    opacity: 0.7; /* Poloprůhlednost */
+}
+
+/* Styl pro tlačítko odhlášení při najetí myší */
+.btn-logout:hover {
+    opacity: 1; /* Zrušení poloprůhlednosti při najetí myší */
+}
+
+
+.btn-logout:hover {
+    background-color: #b81200; /* Barva pozadí při najetí myší */
+}
+
+.form-box {
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(104, 104, 104, 0.8);
+    border-radius: 25px;
+    text-align: center;
+}

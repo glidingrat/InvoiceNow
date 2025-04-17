@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvoiceNow - Registrace</title>
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/response.css"> 
+    <script src="js/register.js" defer></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="icon" href="data:,">
+
+    
+</head>
+
+<body id="register">
+    <header>
+        <a href="index.html" class="logo">
+            <span>InvoiceNow</span>
+        </a>
+    </header>
+
+    <main id="register">
+
+        <div id="error-message" style="display: none; background-color: #f8d7da; color: #721c24; padding: 15px; border: 1px solid #f5c6cb; border-radius: 5px; margin-top: 20px;">
+            Neplatný e-mail.
+        </div>
+
+
+        <div class="form-box">
+            <h1>Registrace</h1>
+            <form id="register-form">
+                <div class="input-group">
+                    <label for="first_name">Jméno</label>
+                    <input type="text" id="first_name" name="first_name" required>
+                </div>
+                <div class="input-group">
+                    <label for="last_name">Příjmení</label>
+                    <input type="text" id="last_name" name="last_name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="username">Uživatelské jméno</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Heslo</label>
+                    <input type="password" id="password" name="password" required>
+                    <small>
+                        <ul>
+                            <li>Jedno velké písmeno</li>
+                            <li>Jedno malé písmeno</li>
+                            <li>Jednu číslici</li>
+                            <li>Minimální délku 8 znaků</li>
+                        </ul>
+                    </small>
+                </div>
+                
+                <button type="submit" class="btn">Zaregistrovat se</button>
+            </form>
+            <p>Máte již účet? <a href="login.html" class="login">Přihlaste se</a></p>
+        </div>
+    </main>
+
+    <script src="js/register.js"></script>
+</body>
+</html>

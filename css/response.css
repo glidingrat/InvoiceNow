@@ -1,0 +1,99 @@
+@media screen and (min-width: 920px) {
+   
+ .flex-container{
+    flex-direction: row;
+}
+
+main#index{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+
+}
+
+@media screen and (max-width: 920px) {
+body#About {
+ text-align: center;
+ margin: 0;
+
+ 
+}
+
+main#index{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p {
+    margin: 25px 10%;
+}
+
+.answers-button {
+    padding: 12px 24px;
+    font-size: 1em;
+}
+
+.office{
+    width: 80%;
+    height: auto;
+   
+}
+.flex-container{
+    margin-left: 10%;
+}
+
+
+body#Contact{
+    align-items: center;
+    margin: 0;
+}
+.contact-container{
+    margin-top: 0; 
+    margin-left: 10%;
+}
+.Sir{
+    display: none;
+}
+
+
+main#index{
+    margin-top: 10%;
+}
+main#About{
+    margin-top: 10%;
+}
+
+
+.nav_links li a{
+    font-size: 24px;
+    font-weight: 700;
+}
+.nav_links li {
+    display: block;
+    margin-bottom: 10px;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+ 
+}
+.logo {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.icons i{
+    display: none;
+}
+
+}

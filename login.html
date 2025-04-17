@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvoiceNow - Přihlášení</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/response.css"> 
+    <script src="js/login.js" defer></script>
+</head>
+<body id="login">
+    <header>
+        <a href="index.html" class="logo">InvoiceNow</a>
+    </header>
+    
+    <main id="login">
+        <div class="form-box">
+            <h1>Přihlášení</h1>
+
+            <!-- Zobrazení chybové zprávy pomocí JavaScriptu -->
+            <p id="error-message" style="color: red; text-align: center; display: none;"></p>
+
+            <form action="php/login.php" method="post">
+                <div class="input-group">
+                    <label for="username">Uživatelské jméno</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Heslo</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn">Přihlásit se</button>
+            </form>
+            <p>Nemáte účet? <a href="register.html" class="register">Zaregistrujte se</a></p>
+        </div>
+    </main>
+
+    <script>
+        // Pokud existuje parametr 'error' v URL, zobrazí chybovou zprávu
+        const urlParams = new URLSearchParams(window.location.search);
+        const error = urlParams.get('error');
+        
+        if (error) {
+            document.getElementById('error-message').textContent = error;
+            document.getElementById('error-message').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
